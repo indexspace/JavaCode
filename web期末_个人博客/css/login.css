@@ -1,0 +1,66 @@
+body{
+    background-image: url("../img/indexBg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 606px;
+    background-attachment: fixed;
+}
+
+#loginForm {
+    position: absolute;
+    top: 50%;
+    margin-top: -200px;
+    left: 50%;
+    margin-left: -200px;
+    background-color: rgb(188, 236, 255);
+    width: 400px;
+    height: 400px;
+    border-radius: 25px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+p {
+    font-size: 42px;
+    font-weight: 600;
+}
+
+.inputBox {
+    position: relative;
+    margin-top: 25px;
+    left: 50px;
+    width: 300px;
+}
+
+.inputBox input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 12px;
+    outline: none;
+}
+
+.inputBox span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    font-size: 12px;
+    pointer-events: none;
+    color: #ccc;
+    transition: all 0.5s;
+}
+
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span {
+    color: black;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 7px;
+    padding: 0 10px;
+    background-color: rgb(188, 236, 255);
+}
+
+#submitButton {
+    margin-top: 30px;
+    width: 100px;
+}

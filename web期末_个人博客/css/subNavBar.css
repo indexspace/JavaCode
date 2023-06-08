@@ -1,0 +1,25 @@
+.subNavBar {
+    position: fixed;
+    top: 40px;
+    left: 0;
+
+    border-top: 1px solid #AAA;
+
+    background-color: #DDD;
+    padding: 12px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+}
+
+.avatar {
+    margin-left: 12px;
+}
+
+.information div {
+    margin: 5px 0;
+}

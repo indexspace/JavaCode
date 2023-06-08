@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="stylesheet" href="css/navBar.css"/>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+<!--导航栏-->
+<div class="navBar">
+    <div class="navBar-left">
+        <div id="switch">
+
+        </div>
+    </div>
+    <div class="navBar-center">
+        <div id="timer">时间</div>
+    </div>
+    <div class="navBar-right">
+        <div>
+            <button name="index">首页</button>
+        </div>
+        <div>
+            <button name="introduce" disabled>简介</button>
+        </div>
+        <div>
+            <button name="notes" disabled>笔记</button>
+        </div>
+        <div id="loginButton">
+            <button name="login" disabled>登录</button>
+        </div>
+    </div>
+</div>
+
+
+<form action="" id="loginForm">
+    <p>登录</p>
+
+    <div class="inputBox">
+        <input type="text" id="username" required>
+        <span>username</span>
+    </div>
+
+    <div class="inputBox">
+        <input type="password" id="password" required>
+        <span>password</span>
+    </div>
+
+    <input type="button" id="submitButton" value=" 登 录 ">
+
+</form>
+
+<script type="text/javascript" src="js/navBar.js" charset="UTF-8"></script>
+<script type="text/javascript" src="js/login.js" charset="UTF-8"></script>
+</body>
+</html>

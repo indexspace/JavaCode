@@ -1,0 +1,25 @@
+.navBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background-color: #DDD;
+    height: 40px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navBar-right {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.navBar-left, .navBar-center, .navBar-right {
+    margin: 0 15px;
+}
+

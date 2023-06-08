@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SpringBoot</title>
+  <link rel="stylesheet" href="../css/someNote.css">
+</head>
+<body>
+  <div class="overall">
+    <div class="sidebar">
+      <div class="individual">
+        <div class="avatar">
+          <img src="../img/avatar.png" alt="菜狗头像"/>
+        </div>
+        <div>
+          <b>粉丝:</b> &nbsp 30
+          <br/>
+          <br/>
+          <b>关注:</b> &nbsp 80
+        </div>
+      </div>
+      <div class="outline">
+          <b>SpringBoot常用注解</b> <br/>
+
+          <br/>
+          <b>组件相关</b><br/>
+          @Controller <br/>
+          @Service <br/>
+          @Repository <br/>
+          @Component <br/>
+          <b>依赖注入注解</b> <br/>
+          @Autowired <br/>
+          @Resource <br/>
+          @Qualifier <br/>
+          <b>实例与生命周期相关注解</b> <br/>
+          @Bean <br/>
+          @Scope <br/>
+          @Primary <br/>
+          @PostConstruct <br/>
+          @PreDestroy <br/>
+          @PostConstruct,@PreDestroy <br/>
+      </div>
+    </div>
+
+    <div class="content">
+        <h1>组件相关注解</h1>
+        <h2>@Controller</h2>
+        用于修饰MVC中controller层的组件，SpringBoot中的组件扫描功能会识别到该注解，并为修饰的类实例化对象,
+                通常与@RequestMapping联用，当SpringMVC获取到请求时会转发到指定路径的方法进行处理. <br/>
+        <div class="code">
+        /** <br/>
+        * @auther macrozheng <br/>
+        * @description 后台用户管理Controller <br/>
+        * @date 2018/4/26 <br/>
+        * @github https://github.com/macrozheng <br/>
+        */ <br/>
+        @Controller <br/>
+        @RequestMapping("/admin") <br/>
+        public class UmsAdminController { <br/> <br/>
+
+        } <br/>
+        </div>
+
+        <h2>@Service</h2>
+        用于修饰service层的组件，service层组件专注于系统业务逻辑的处理，同样会被组件扫描并生成实例化对象. <br/>
+
+        <div class="code">
+        /** <br/>
+        * @auther macrozheng <br/>
+        * @description 后台用户管理Service实现类 <br/>
+        * @date 2018/4/26 <br/>
+        * @github https://github.com/macrozheng <br/>
+        */ <br/>
+        @Service <br/>
+        public class UmsAdminServiceImpl implements UmsAdminService { <br/> <br/>
+
+        } <br/>
+        </div>
+
+        <h2>@Repository</h2>
+        用于修饰dao层的组件，dao层组件专注于系统数据的处理，例如数据库中的数据，同样会被组件扫描并生成实例化对象。 <br/>
+
+        <div class="code">
+        /** <br/>
+        * @auther macrozheng <br/>
+        * @description 后台用户与角色关系管理自定义Dao <br/>
+        * @date 2018/10/8 <br/>
+        * @github https://github.com/macrozheng <br/>
+        */ <br/>
+        @Repository <br/>
+        public interface UmsAdminRoleRelationDao { <br/> <br/>
+
+        } <br/>
+        </div>
+
+        <h2>@Component</h2>
+        用于修饰SpringBoot中的组件，会被组件扫描并生成实例化对象。@Controller、@Service、@Repository都是特殊的组件注解。 <br/>
+
+        <div class="code">
+        /** <br/>
+        * @auther macrozheng <br/>
+        * @description 取消订单消息的生产者组件 <br/>
+        * @date 2018/9/14 <br/>
+        * @github https://github.com/macrozheng <br/>
+        */ <br/>
+        @Component <br/>
+        public class CancelOrderSender { <br/> <br/>
+
+        } <br/>
+        </div>
+
+        <h1>依赖注入注解</h1>
+        <h2>@Autowired</h2>
+        会根据对象的类型自动注入依赖对象，默认要求注入对象实例必须存在，可以配置required=false来注入不一定存在的对象。 <br/>
+
+        <div class="code">
+        /** <br/>
+        * @auther macrozheng <br/>
+        * @description 后台用户管理Controller <br/>
+        * @date 2018/4/26 <br/>
+        * @github https://github.com/macrozheng <br/>
+        */ <br/>
+        @Controller <br/>
+        @RequestMapping("/admin") <br/>
+        public class UmsAdminController { <br/>
+        @Autowired <br/>
+        private UmsAdminService adminService; <br/>
+        } <br/>
+        </div>
+
+        <h2>@Resource</h2>
+        默认会根据对象的名称自动注入依赖对象，如果想要根据类型进行注入，可以设置属性为type = UmsAdminService.class。 <br/>
+
+        <div class="code">
+        /** <br/>
+        * @auther macrozheng <br/>
+        * @description 后台用户管理Controller <br/>
+        * @date 2018/4/26 <br/>
+        * @github https://github.com/macrozheng <br/>
+        */ <br/>
+        @Controller <br/>
+        @RequestMapping("/admin") <br/>
+        public class UmsAdminController { <br/>
+        @Autowired <br/>
+        @Resource(name = "umsAdminServiceImpl") <br/>
+        private UmsAdminService adminService; <br/>
+        } <br/>
+        </div>
+
+        <h2>@Qualifier</h2>
+        当同一个对象有多个实例可以注入时，使用@Autowired注解无法进行注入，这时可以使用@Qualifier注解指定实例的名称进行精确注入。 <br/>
+
+        <div class="code">
+        /** <br/>
+        * @auther macrozheng <br/>
+        * @description 后台用户管理Controller <br/>
+        * @date 2018/4/26 <br/>
+        * @github https://github.com/macrozheng <br/>
+        */ <br/>
+        @Controller <br/>
+        @RequestMapping("/admin") <br/>
+        public class UmsAdminController { <br/>
+        @Autowired <br/>
+        @Qualifier("umsAdminServiceImpl") <br/>
+        private UmsAdminService adminService; <br/>
+        } <br/>
+        </div>
+
+        <h1>实例与生命周期相关注解</h1>
+        <h2>@Bean</h2>
+        用于修饰方法，标识该方法会创建一个Bean实例，并交给Spring容器来管理。 <br/>
+
+        <div class="code">
+        /** <br/>
+        * @auther macrozheng <br/>
+        * @description RestTemplate相关配置 <br/>
+        * @date 2018/4/26 <br/>
+        * @github https://github.com/macrozheng <br/>
+        */ <br/>
+        @Configuration <br/>
+        public class RestTemplateConfig { <br/>
+        @Bean <br/>
+        public RestTemplate restTemplate(){ <br/>
+        return new RestTemplate(); <br/>
+        } <br/>
+        } <br/>
+        </div>
+
+        <h2>@Scope</h2>
+        用于声明一个SpringBean实例的作用域，作用域的范围有以下几种： <br/>
+
+        singleton：单例模式，在Spring容器中该实例唯一，Spring默认的实例模式。 <br/>
+        prototype：原型模式，每次使用实例都将重新创建。 <br/>
+        request：在同一请求中使用相同的实例，不同请求重新创建。 <br/>
+        session：在同一会话中使用相同的实例，不同会话重新创建。 <br/>
+
+        <div class="code">
+        /** <br/>
+        * @auther macrozheng <br/>
+        * @description RestTemplate相关配置 <br/>
+        * @date 2018/4/26 <br/>
+        * @github https://github.com/macrozheng <br/>
+        */ <br/>
+        @Configuration <br/>
+        public class RestTemplateConfig { <br/>
+        @Bean <br/>
+        @Scope("singleton") <br/>
+        public RestTemplate restTemplate(){ <br/>
+        return new RestTemplate(); <br/>
+        } <br/>
+        } <br/>
+        </div>
+
+        <h2>@Primary</h2>
+        当同一个对象有多个实例时，优先选择该实例。 <br/>
+
+        <div class="code">
+        /** <br/>
+        * @auther macrozheng <br/>
+        * @description Jackson相关配置，配置json不返回null的字段 <br/>
+        * @date 2018/8/2 <br/>
+        * @github https://github.com/macrozheng <br/>
+        */ <br/><br/>
+
+        @Configuration <br/>
+        public class JacksonConfig { <br/>
+        @Bean <br/>
+        @Primary <br/>
+        @ConditionalOnMissingBean(ObjectMapper.class) <br/>
+        public ObjectMapper jacksonObjectMapper(Jackson2ObjectMapperBuilder builder) { <br/>
+        ObjectMapper objectMapper = builder.createXmlMapper(false).build(); <br/>
+        objectMapper.setSerializationInclusion(JsonInclude.Include.NON_NULL); <br/>
+        return objectMapper; <br/>
+        } <br/>
+        } <br/>
+        </div>
+
+        <h2>@PostConstruct</h2>
+        用于修饰方法，当对象实例被创建并且依赖注入完成后执行，可用于对象实例的初始化操作。 <br/>
+
+        <h2>@PreDestroy</h2>
+        用于修饰方法，当对象实例将被Spring容器移除时执行，可用于对象实例持有资源的释放。 <br/>
+
+        <h2>@PostConstruct、@PreDestroy示例</h2>
+        <div class="code">
+        /** <br/>
+        * @auther macrozheng <br/>
+        * @description 动态权限数据源，用于获取动态权限规则 <br/>
+        * @date 2020/2/7 <br/>
+        * @github https://github.com/macrozheng <br/>
+        */ <br/>
+        public class DynamicSecurityMetadataSource implements FilterInvocationSecurityMetadataSource { <br/>
+
+        private static Map&lt; String, ConfigAttribute> configAttributeMap = null; <br/>
+        @Autowired <br/>
+        private DynamicSecurityService dynamicSecurityService; <br/>
+
+        @PostConstruct <br/>
+        public void loadDataSource() { <br/>
+        configAttributeMap = dynamicSecurityService.loadDataSource(); <br/>
+        } <br/>
+
+        @PostConstruct <br/>
+        public void loadDataSource() { <br/>
+        configAttributeMap = dynamicSecurityService.loadDataSource(); <br/>
+        } <br/>
+
+        @PreDestroy <br/>
+        public void clearDataSource() { <br/>
+        configAttributeMap.clear(); <br/>
+        configAttributeMap = null; <br/>
+        } <br/>
+        } <br/>
+        </div>
+
+
+    </div>
+  </div>
+</body>
+</html>
