@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>hello</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" th:href="@{/layui/css/layui.css}"/>
+</head>
+<!--TODO layui引入失败-->
+<body>
+    <script type="text/javascript" th:src="@{/layui/layui.js}"></script>
+
+    <p> hello </p>
+    <br/>
+    <input type="text" name="title" required lay-verify="required"
+           placeholder="请输入标题" autocomplete="off" class="layui-input">
+    <br/>
+    默认风格：
+    <input type="checkbox" name="" title="写作" checked>
+    <input type="checkbox" name="" title="发呆">
+    <input type="checkbox" name="" title="禁用" disabled>
+
+    原始风格：
+    <input type="checkbox" name="" title="写作" lay-skin="primary" checked>
+    <input type="checkbox" name="" title="发呆" lay-skin="primary">
+    <input type="checkbox" name="" title="禁用" lay-skin="primary" disabled>
+</body>
+</html>

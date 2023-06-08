@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>用户注册信息表</title>
+</head>
+
+<body>
+<form name="register">
+  <fieldset>
+    <legend>必填信息</legend>
+    用户名：<input type="text" name="name" onblur="fun1()"><span id="nameNote"></span>
+    <br>
+    密码：<input type="password" name="pass"><span id="passNote"></span>
+  </fieldset>
+  <fieldset>
+    <legend>其他个人信息</legend>
+    性别：
+    <input type="radio" name="gender" value="m">男
+    <input type="radio" name="gender">女<br>
+    爱好：
+    <input type="checkbox" name="hobby">音乐
+    <input type="checkbox" name="hobby">体育
+    <input type="checkbox" name="hobby">计算机
+    <input type="checkbox" name="allhobby">全选<br>
+    个人简介：
+    <textarea name="intro" cols="30" rows="10" placeholder="简单介绍一下自己吧~"></textarea>
+  </fieldset>
+  <br>
+  <input type="submit" name="submit" value="提交">&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="reset" name="reset" value="重置">
+</form>
+<script>
+  var obj1 = document.register.name
+  var obj2 = document.register.pass
+  var obj3 = document.getElementById("nameNote")
+  var obj4 = document.getElementById("passNote")
+  
+  function fun1(){
+
+    if(obj1.value.length==0){
+      obj3.innerHTML = "用户名不能为空"
+      obj3.style.color="red"}
+    else
+    {
+      obj3.innerHTML=" "
+    }
+    if(obj2.value.length==0 ){
+      obj4.innerHTML = "密码不能为空"
+      obj4.style.color="red"
+    }
+    else if(obj2.value.length >=8 && obj2.value.length <=12){
+      obj4.innerHTML = " "}
+    else {
+      obj4.innerHTML = "密码应为8~12位"
+      obj4.style.color="red"
+    }
+  }
+
+  var allhobby1 = document.register.allhobby
+  console.log(allhobby1)
+  var hobby1 = document.getElementsByName("hobby")[0]
+  var hobby2 = document.getElementsByName("hobby")[1]
+  var hobby3 = document.getElementsByName("hobby")[2]
+
+  allhobby1.onclick = function() {
+    hobby1.checked = allhobby1.checked
+    hobby2.checked = allhobby1.checked
+    hobby3.checked = allhobby1.checked
+  }
+
+  var submit1=document.register.submit
+  console.log("hello1")
+  console.log(submit1)
+
+  submit1.onclick=function(){
+    console.log("hello2")
+    if(obj1.value.length==0||obj2.value.length==0)
+      alert("用户名或密码不能为空")
+    else
+      alert("提交成功")
+  }
+</script>
+</body>
+
+</html>

@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    config:
+      name: borrowService
+      uri: http://localhost:8700
+      profile: dev
+      label: master

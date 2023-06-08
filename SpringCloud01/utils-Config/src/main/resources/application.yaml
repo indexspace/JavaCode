@@ -1,0 +1,16 @@
+
+spring:
+  application:
+    name: configServer
+  cloud:
+    config:
+      server:
+        git:
+          # 这里填写的是本地仓库地址，远程仓库直接填写远程仓库地址 http://git...
+          uri: https://gitee.com/indexspace/spring-cloud_-config.git
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka01:8801/eureka

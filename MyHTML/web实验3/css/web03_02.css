@@ -1,0 +1,48 @@
+div {
+    width: 100%;
+    margin: 8px;
+}
+li {
+    list-style: none;
+}
+div.msgBlock {
+    height: 80px;
+    background-color: #777777;
+}
+div.plainBlock {
+    height: 250px;
+    background-color: #AAAAAA;
+}
+div.plainBlock>ul>li {
+    display: inline-block;
+    margin: 36px;
+}
+
+/*div.plainBlock div {
+    width: 500px;
+    height: 180px;
+    background-color: black;
+    color: #FFFFFF;
+}*/
+
+#inBlock {
+    width: 600px;
+    height: 180px;
+    background-color: black;
+    color: #FFFFFF;
+    float: left;
+}
+#hiddenBlock {
+    width: 400px;
+    height: 180px;
+    background-color: transparent;
+    color: #FFFFFF;
+    float: right;
+    padding: 0;
+}
+
+#hiddenBlock li>div{
+    background-color: black;
+    height: 28px;
+    margin: 30px;
+}

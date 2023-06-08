@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>样式切换</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div#tab {
+            width: 80%;
+            margin: 10px auto;
+            padding: 10px;
+            text-align: center;
+        }
+
+        span,
+        select {
+            width: 100px;
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        div#content {
+            width: 80%;
+            border: 1px solid gray;
+            margin: 10px auto;
+            padding: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 10px;
+        }
+
+        p {
+            text-indent: 2em;
+            line-height: 1.5;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="tab">
+        <span>背景颜色</span>
+        <select name="bgcolor" id="bgSelector">
+            <option value="white">白色</option>
+            <option value="red">红色</option>
+            <option value="blue">蓝色</option>
+            <option value="green">绿色</option>
+        </select>
+        <span>文字颜色</span>
+        <select name="txtcolor" id="txtSelector">
+            <option value="black"></option>
+            <option value="red">红色</option>
+            <option value="blue">蓝色</option>
+            <option value="green">绿色</option>
+        </select>
+        <span>文字字体</span>
+        <select name="font" id="fontSelector">
+            <option value="微软雅黑"></option>
+            <option value="黑体">黑体</option>
+            <option value="楷体">楷体</option>
+            <option value="仿宋">仿宋</option>
+        </select>
+    </div>
+    <div id="content">
+        <h1>少年中国说</h1>
+        <p>故今日之责任，不在他人，而全在我少年。少年智则国智，少年富则国富；<strong>少年强则国强</strong>，少年独立则国独立；少年自由则国自由；少年进步则国进步；少年胜于欧洲，则国胜于欧洲；少年雄于地球，则国雄于地球。
+        </p>
+        <p>红日初升，其道大光；河出伏流，一泻汪洋；潜龙腾渊，鳞爪飞扬；乳虎啸谷，百兽震惶；鹰隼试翼，风尘翕张；奇花初胎，矞矞皇皇；干将发硎，有作其芒；天戴其苍，地履其黄；纵有千古，横有八荒，前途似海，来日方长。美哉我少年中国，与天不老；壮哉我中国少年，与国无疆！
+        </p>
+    </div>
+
+    <script src="web04_03.js" type="text/javascript" charset="utf-8"></script>
+</body>
+
+</html>

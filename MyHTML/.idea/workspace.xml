@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="efad0072-1954-4eda-8623-33309d3e4335" name="变更" comment="web05已完成">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web实验5/web05_03/web05_03.html" beforeDir="false" afterPath="$PROJECT_DIR$/web实验5/web05_03/web05_03.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/web实验4/web04_02/web04_02.js" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Ml5fogR04x1PTIuKnvQJCCzQvB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/__acquired_D/_code_savedarea/idea_code/MyHTML/web实验5/bootstrap&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\__acquired_D\_code_savedarea\idea_code\MyHTML\web实验5\bootstrap" />
+      <recent name="D:\__acquired_D\_code_savedarea\idea_code\MyHTML\web实验5" />
+      <recent name="D:\__acquired_D\_code_savedarea\idea_code\MyHTML\web期末_个人博客\js" />
+      <recent name="D:\__acquired_D\_code_savedarea\idea_code\MyHTML\web期末_个人博客\css" />
+      <recent name="D:\__acquired_D\_code_savedarea\idea_code\MyHTML\Test\bootstrapTest\js" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\__acquired_D\_code_savedarea\idea_code\MyHTML\web期末_个人博客\img" />
+      <recent name="D:\__acquired_D\_code_savedarea\idea_code\MyHTML\web实验2\img" />
+      <recent name="D:\__acquired_D\_code_savedarea\idea_code\MyHTML\web实验2" />
+      <recent name="D:\__acquired_D\_code_savedarea\idea_code\MyHTML\web实验2\web0201" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="efad0072-1954-4eda-8623-33309d3e4335" name="变更" comment="" />
+      <created>1678329434545</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1678329434545</updated>
+      <workItem from="1682506403440" duration="599000" />
+      <workItem from="1682679005815" duration="813000" />
+      <workItem from="1682681952613" duration="10984000" />
+      <workItem from="1682761690640" duration="761000" />
+      <workItem from="1682854202238" duration="61000" />
+      <workItem from="1682864658799" duration="278000" />
+      <workItem from="1682904824081" duration="19000" />
+      <workItem from="1684409709243" duration="8095000" />
+      <workItem from="1684464659661" duration="8297000" />
+      <workItem from="1684492433105" duration="6480000" />
+      <workItem from="1684577912742" duration="2189000" />
+      <workItem from="1684580249623" duration="92000" />
+      <workItem from="1684638376899" duration="1697000" />
+      <workItem from="1684672515216" duration="10000" />
+      <workItem from="1684722114720" duration="507000" />
+      <workItem from="1684723495055" duration="145000" />
+      <workItem from="1685278390506" duration="328000" />
+      <workItem from="1685429968751" duration="253000" />
+      <workItem from="1685430249969" duration="115000" />
+      <workItem from="1685430385515" duration="2000" />
+      <workItem from="1685515567773" duration="11000" />
+      <workItem from="1685577967186" duration="8575000" />
+      <workItem from="1685587072326" duration="5338000" />
+      <workItem from="1685593863060" duration="100000" />
+      <workItem from="1685847668378" duration="219000" />
+      <workItem from="1685847899735" duration="39000" />
+      <workItem from="1685863859329" duration="735000" />
+      <workItem from="1685864618983" duration="1173000" />
+      <workItem from="1685867892616" duration="351000" />
+      <workItem from="1685880244574" duration="2000" />
+      <workItem from="1685939599145" duration="4000" />
+      <workItem from="1686009773679" duration="244000" />
+      <workItem from="1686010045385" duration="6895000" />
+      <workItem from="1686016968081" duration="9000" />
+      <workItem from="1686032213669" duration="6120000" />
+    </task>
+    <task id="LOCAL-00001" summary="[初始] [实验二 &amp; 实验三][已完成]">
+      <created>1684410025246</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1684410025246</updated>
+    </task>
+    <task id="LOCAL-00002" summary="完成部分的 index &amp; login">
+      <created>1685591112217</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1685591112217</updated>
+    </task>
+    <task id="LOCAL-00003" summary="未进行版本管理的文件">
+      <created>1685593177605</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1685593177605</updated>
+    </task>
+    <task id="LOCAL-00004" summary="移除web期末">
+      <created>1685593897993</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1685593897993</updated>
+    </task>
+    <task id="LOCAL-00005" summary="实验五 完成一半">
+      <created>1686016955364</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1686016955364</updated>
+    </task>
+    <task id="LOCAL-00006" summary="web05_02 已完成">
+      <created>1686035737894</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1686035737894</updated>
+    </task>
+    <task id="LOCAL-00007" summary="web05已完成">
+      <created>1686037216186</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1686037216186</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="[初始] [实验二 &amp; 实验三][已完成]" />
+    <MESSAGE value="完成部分的 index &amp; login" />
+    <MESSAGE value="未进行版本管理的文件" />
+    <MESSAGE value="移除web期末" />
+    <MESSAGE value="实验五 完成一半" />
+    <MESSAGE value="web05_02 已完成" />
+    <MESSAGE value="web05已完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="web05已完成" />
+  </component>
+</project>

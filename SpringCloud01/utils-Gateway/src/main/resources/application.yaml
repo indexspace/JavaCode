@@ -1,0 +1,30 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8801/eureka
+
+spring:
+  application:
+    name: gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      # 配置路由，注意这里是个列表，每一项都包含了很多信息
+      routes:
+        - id: service-user   # 路由名称, 唯一即可
+          uri: lb://userService    # 路由的地址，lb表示使用负载均衡到微服务，也可以使用http正常转发
+          predicates:      # 路由规则，断言什么请求会被路由
+            - Path=/user/**    # 只要是访问的这个路径，一律都被路由到上面指定的服务
+        - id: service-book
+          uri: http://localhost:8020
+          predicates:
+            - Path=/book/**
+        - id: borrowService
+          uri: http://localhost:8030
+          predicates:
+            - Path=/borrow/**
+          filters: # 添加过滤器
+            - AddRequestHeader=Test, HelloWorld!

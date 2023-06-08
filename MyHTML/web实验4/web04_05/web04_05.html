@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学生信息表</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        table {
+            margin: 20px auto;
+            width: 500px;
+            text-align: center;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            height: 30px;
+            border: 1px solid;
+        }
+
+        form {
+            margin: 20px auto;
+            width: 300px;
+            border: 1px solid;
+            padding: 10px 50px 20px;
+        }
+
+        input,
+        b,
+        span {
+            height: 30px;
+            line-height: 30px;
+            vertical-align: bottom;
+            margin-top: 10px;
+        }
+
+        input[type="button"],
+        input[type="reset"] {
+            width: 50px;
+            margin-top: 20px;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>学号</th>
+                <th>姓名</th>
+                <th>性别</th>
+                <th>年龄</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody id="sData">
+        </tbody>
+    </table>
+    <form name="add">
+        <b>学号：</b><input type="text" name="sno"><br>
+        <b>姓名：</b><input type="text" name="name"><br>
+        <b>性别：</b>
+        <input type="radio" name="gender" value="男">&nbsp;&nbsp;<span>男</span>&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio" name="gender" value="女">&nbsp;&nbsp;<span>女</span><br>
+        <b>年龄：</b><input type="text" name="age"><br>
+        <input type="button" name="addBtn" value="增加">
+        <input type="reset" value="重置">
+    </form>
+
+    <script src="web04_05.js" type="text/javascript" charset="UTF-8"></script>
+</body>
+
+</html>

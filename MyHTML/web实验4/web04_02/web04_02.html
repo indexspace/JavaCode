@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>操作元素属性_2021070330106曹兆鹏</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul.tab {
+            width: 400px;
+            height: 30px;
+            text-align: center;
+        }
+
+        ul.tab li {
+            list-style: none;
+            float: left;
+            width: 90px;
+            height: 30px;
+            background-color: gray;
+            color: white;
+            margin: 5px;
+            line-height: 30px;
+        }
+
+        div#imgbox {
+            width: 400px;
+            height: 400px;
+            background-color: azure;
+            margin: 5px;
+        }
+
+        div#imgbox img {
+            width: 390px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="imgbox">
+        <img src="img/panda2.jpg" alt="">
+    </div>
+    <ul class="tab">
+        <li onclick="document.querySelector('div#imgbox img').src='img/panda1.jpg'">花花</li>
+        <li onclick="">如意</li>
+        <li onclick="">福宝</li>
+        <li onclick="">萌兰</li>
+    </ul>
+
+
+    <script src="web04_02.js" type="text/javascript" charset="uft-8"></script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Eureka-center/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Eureka-center/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/book/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/book/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/borrow/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/borrow/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/entities/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/entities/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/server-book/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/server-book/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/server-borrow/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/server-borrow/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/server-user/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/server-user/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/utils-Config/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/utils-Config/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/utils-Eureka/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/utils-Eureka/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/utils-Gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/utils-Gateway/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

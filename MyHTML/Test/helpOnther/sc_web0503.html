@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>实验五</title>
+  <link rel="stylesheet" href="C:\Users\lenovo\Downloads\bootstrap-5.3.0-alpha1-dist\css\bootstrap.min.css">
+  <style>
+    *{
+      margin:0;
+      padding:0;
+    }
+    ul.a>li{
+      display:inline-block;
+      width:65px;
+      margin:10px;
+      padding:0;
+      background-color: pink;
+
+
+    }
+    ul.list{
+      display:none;
+      margin:0;
+      padding:0;
+    }
+    ul.a>li:hover ul.list{
+      display:block;
+      position:absolute;
+      text-decoration: underline;
+    }
+    ul{list-style-type: none;
+    }
+    #b dl dt{float:left;}
+    #b dl dd{width:400px;
+      padding: 20px;
+      margin-top: 18px;
+    }
+    ul{list-style-type: disc;}
+    .title:hover{color:blue;
+      text-decoration: underline;}
+  </style>
+</head>
+<body>
+<ul class="a"  >
+  <li>
+    部门首页
+    <ul class="list" >
+      <li>部门简介</li>
+      <li>老师简介</li>
+    </ul>
+  </li>
+  <li>部门概况
+    <ul class="list">
+      <li>现任领导</li>
+      <li>下任领导</li>
+    </ul>
+  </li>
+  <li>师资队伍
+    <ul class="list">
+      <li>博士</li>
+      <li>硕士</li>
+    </ul>
+  </li>
+  <li>招生工作
+    <ul class="list">
+      <li>招生</li>
+      <li>工作</li>
+    </ul>
+  </li>
+  <li>国内交流
+    <ul class="list">
+      <li>国内</li>
+      <li>交流</li>
+    </ul>
+  </li>
+  <li>招聘工作
+    <ul class="list">
+      <li>招聘</li>
+      <li>紧急工作</li>
+    </ul>
+  </li>
+  <li>新闻中心
+    <ul class="list">
+      <li>新闻</li>
+      <li>大事件</li>
+    </ul>
+  </li>
+  <li>学科专业
+    <ul class="list">
+      <li>特色学科</li>
+      <li>计算机专业</li>
+    </ul>
+  </li>
+  <li>教学科研
+    <ul class="list">
+      <li>教学</li>
+      <li>科研</li>
+    </ul>
+  </li>
+  <li>党建工作
+    <ul class="list">
+      <li>党建</li>
+      <li>工作</li>
+    </ul>
+  </li>
+  <li>团学工作
+    <ul class="list">
+      <li>团学</li>
+      <li>工作</li>
+    </ul>
+  </li>
+  <li>班级建设
+    <ul class="list">
+      <li>班级</li>
+      <li>建设</li>
+    </ul>
+  </li>
+  <li>学校主页
+    <ul class="list">
+      <li>桂航</li>
+      <li>主页</li>
+    </ul>
+  </li>
+  <li>学科竞赛
+    <ul class="list">
+      <li>省级比赛</li>
+      <li>国家级比赛</li>
+    </ul>
+  </li>
+  <li>考研考公
+    <ul class="list">
+      <li>考研</li>
+      <li>考公</li>
+    </ul>
+  </li>
+  <li>学校环境
+    <ul class="list">
+      <li>南校区</li>
+      <li>北校区</li>
+    </ul>
+  </li>
+</ul>
+<div id="b"  align="center">
+  <dl>
+    <dt><img  style="width:580px; height: 470px; padding:20px;"  src="C:/Users/lenovo/Desktop/1.jpg" id="imgbox"></dt>
+    <dd>
+      <uL>
+        <li class="title">关于对2021级孙驰同学表彰大会6月3日举行</li>
+      </uL>
+    </dd>
+    <dd>
+      <ul>
+        <li class="title">关于对2021级孙驰同学表彰大会6月4日举行</li>
+      </ul>
+    </dd>
+    <dd><ul>
+      <li class="title">关于对2021级孙驰同学表彰大会6月5日举行</li>
+    </ul>
+    </dd>
+    <dd>
+      <ul>
+        <li class="title">关于对2021级孙驰同学表彰大会6月6日举行</li>
+      </ul>
+    </dd>
+    <dd><ul>
+      <li>关于对2021级孙驰同学表彰大会6月7日举行</li>
+    </ul></dd>
+
+  </dl></div>
+<script>
+  var i=1;
+  var img =document.getElementById("imgbox")
+  setInterval(function(){
+    if(i<4)
+      img.src="C:/Users/lenovo/Desktop/" + ++i +".jpg"
+    console.log(i)
+    if(i==4)i=0
+  },2000)
+</script>
+
+
+</body>
+</html>

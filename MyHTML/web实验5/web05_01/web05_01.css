@@ -1,0 +1,22 @@
+.container > .row > div:first-child {
+    background-color: cadetblue;
+}
+
+.container > .row > div:nth-child(2) > .row:nth-child(1) {
+    height: 50px;
+    background-color: yellow;
+}
+
+.container > .row > div:nth-child(2) > .row:nth-child(2) > div {
+    height: 200px;
+}
+
+.container > .row > div:nth-child(2) > .row:nth-child(3) > div {
+    height: 400px;
+}
+
+.container > .row > div:nth-child(2) > .row:nth-child(2) > div,
+.container > .row > div:nth-child(2) > .row:nth-child(3) > div {
+    margin: 10px;
+    background-color: aquamarine;
+}
