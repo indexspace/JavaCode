@@ -8,15 +8,15 @@ body {
 }
 
 .content {
+    overflow: scroll;
     padding: 15px;
     background-color: #fdfdfd;
     position: fixed;
     top: 0;
     left: 160px;
     height: 100%;
-    width: 891px;
-    overflow: scroll;
-}
+    width: 862px;
+    }
 
 .sidebar {
     width: 150px;
@@ -37,7 +37,7 @@ body {
 .outline {
     padding:8px;
     background-color: #fdfdfd;
-    height: 353px;
+    height: 323px;
     width: 134px;
     overflow: scroll;
     position: fixed;
