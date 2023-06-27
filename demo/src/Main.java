@@ -3,25 +3,27 @@
  */
 
 public class Main {
+
+    static int val;
+
+    public static void getVal(){
+        System.out.println(val);
+    }
+
+    public static void init(){
+        val = 1;
+        System.out.println("003");
+    }
+
     public static void main(String[] args) {
         System.out.println("hello world");
-        System.out.println("001");
-        System.out.println("002");
-        System.out.println("003");
-        System.out.println("005");
-        System.out.println(zero());
-        System.out.println(zero1());
-        System.out.println(zero());
-        System.out.println(zero1());
+        init();
+        getVal();
 
-    }
-    
-    static int zero() {
-        return 0;
-    }
-    
-    static int zero1() {
-        return 1;
+        if (val == 0);
+        else;{
+            System.out.println("00");
+        }
     }
 
 }
