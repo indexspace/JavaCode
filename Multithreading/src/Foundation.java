@@ -16,12 +16,12 @@ public class Foundation {
         FutureTask<Integer> task1 = new FutureTask<>(new C(5));
         Thread thread1 = new Thread(task1);
         thread1.start();
-        // System.out.println(task1.get());
+        System.out.println(task1.get());
 
         FutureTask<Integer> task2 = new FutureTask<>(new C(6));
         Thread thread2 = new Thread(task2);
         thread2.start();
-        // System.out.println(task2.get());
+        System.out.println(task2.get());
 
     }
 
