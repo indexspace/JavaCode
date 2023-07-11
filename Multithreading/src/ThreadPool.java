@@ -13,6 +13,4 @@ public class ThreadPool {
         service.submit(new Thread(new B(8)));
         service.shutdown();
     }
-
-
 }

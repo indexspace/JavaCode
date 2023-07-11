@@ -26,10 +26,9 @@ public class Foundation {
         A  a1 = new A(1);
         a1.start();
 
-        A a2 = new A(2);
-        // a2.start();
+        new A(2).start();
 
-        Thread[] threads = {thread1, thread2, a1, a2};
+        Thread[] threads = {thread1, thread2, a1};
 
         System.out.println("指定数组内的线程存活量 " + Thread.enumerate(threads));  // 指定数组内的线程存活量
         System.out.println("全局线程存活量 " + Thread.activeCount());  // 全局线程存活量
