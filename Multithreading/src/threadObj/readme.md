@@ -1,4 +1,4 @@
 # threadObj的介绍
 + A: Thread, sleep()
 + B: Runnable, new ReentrantLock().lock()/unlock()
-+ C: Callable, yield()
++ C: Callable, yield(), new ReentrantLock().newCondition()
