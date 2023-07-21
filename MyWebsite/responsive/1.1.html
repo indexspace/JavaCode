@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        :root {
+            --phoneColor: aquamarine;
+        }
+
+
+        * {padding: 0; margin: 0}
+
+        @media screen and (min-width: 0) and (max-width: 350px) {   /*手机*/
+            .out {
+                width: 100%;
+                background-color: var(--phoneColor);
+                border: 1px solid red;
+            }
+            .out .box {
+                width: 80%;
+                height:60px;
+                margin: 10px auto;
+                background-color: #ccc;
+                border: 1px solid blue;
+            }
+        }
+
+        @media screen and (min-width: 350px) and (max-width: 768px) {
+            .out {
+                width: 100%;
+                background-color: var(--phoneColor);
+                border: 1px solid red;
+                overflow: hidden;
+            }
+            .out .box {
+                width: 48%;
+                height:60px;
+                margin: 1% 2% 1% 0;
+                float: left;
+                background-color: #ccc;
+                border: 1px solid blue;
+            }
+            .out .box:nth-child(2n) {
+                margin-right: 0;
+            }
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1024px) {
+            .out {
+                width: 760px;
+                background-color: var(--phoneColor);
+                border: 1px solid red;
+                overflow: hidden;
+            }
+            .out .box {
+                width: 173px;
+                height:60px;
+                margin: 10px 20px 10px 0;
+                float: left;
+                background-color: #ccc;
+                border: 1px solid blue;
+            }
+            .out .box:nth-child(4n) {
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="out">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">10</div>
+        <div class="box">11</div>
+        <div class="box">12</div>
+        <div class="box">13</div>
+        <div class="box">14</div>
+        <div class="box">15</div>
+        <div class="box">16</div>
+    </div>
+</body>
+</html>
