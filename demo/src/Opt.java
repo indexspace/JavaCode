@@ -4,7 +4,7 @@ import java.util.Optional;
 public class Opt {
 
     public static void main(String[] args) {
-        User user1 = new User("czp", 21);
+        User user1 = new User("czp", 21, true);
         User user2 = null;
 
         Optional<User> optional1 = Optional.ofNullable(user1);

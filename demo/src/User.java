@@ -2,7 +2,13 @@ public class User {
     private String name;
     private int age;
 
-    public User() {
+    private boolean Active;
+
+
+    public User(String name, int age, boolean Active) {
+        this.name = name;
+        this.age = age;
+        this.Active = Active;
     }
 
     public String getName() {
@@ -21,16 +27,11 @@ public class User {
         this.age = age;
     }
 
-    public User(String name, int age) {
-        this.name = name;
-        this.age = age;
+    public boolean isActive() {
+        return Active;
     }
 
-    @Override
-    public String toString() {
-        return "User{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                '}';
+    public void setActive(boolean active) {
+        Active = active;
     }
 }

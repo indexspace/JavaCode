@@ -16,14 +16,19 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        System.out.println("hello world");
-        init();
-        getVal();
 
-        if (val == 0);
-        else;{
-            System.out.println("00");
-        }
+        FlyWeightPool pool = FlyWeightPool.getInstance();
+
+        User user1 = pool.getUser();
+        System.out.println("user1 = " + user1);
+
+        User user2 = pool.getUser();
+        System.out.println("user2 = " + user2);
+
+        user1.setActive(true);
+
+        User user3 = pool.getUser();
+        System.out.println("user3 = " + user3);
     }
 
 }
