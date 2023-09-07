@@ -33,7 +33,7 @@ public class UserMapperTest {
     @Ignore
     @Test
     public void addUserTest(){
-        mapper.addUser(6, "lisi", "000004");
+        mapper.addUser(2, "lisi", "000004");
     }
     // 删
     @Test
@@ -49,7 +49,7 @@ public class UserMapperTest {
     // 改
     @Test
     public void updatePwdTest(){
-        mapper.updatePassword(2,"123123");
+        mapper.updatePassword(6,"123123");
 
     }
 
