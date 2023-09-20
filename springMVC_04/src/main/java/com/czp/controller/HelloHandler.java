@@ -10,7 +10,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 @Controller
-@RequestMapping("/HelloHandler")
 public class HelloHandler {
 
     /**
@@ -19,12 +18,16 @@ public class HelloHandler {
      * 执行这个方法后，会返回结果
      * @ return
      */
+    @GetMapping
+    public String index() {
+        return "index";
+    }
 
     // RequestParam引入参数
-    @RequestMapping(value = "/hello")
-    public String index(@RequestParam("name") String userName,
-                        @RequestParam("gender") String userGender){
-        System.out.println(userGender + userName + "接收到了hello请求");
+    @RequestMapping(value = "/hello") // @RequestParam("name") String userName,
+    // @RequestParam("gender") String userGender
+    public String hello(){
+        System.out.println("接收到了hello请求");
         //返回逻辑视图 逻辑视图相当于视图的别名 通过这个找到物理视图，也就是真正的视图
         //这里返回的只是页面的名称，不是完整的页面访问路径
         return "hello";
@@ -85,9 +88,9 @@ public class HelloHandler {
     }
 
     // Session   addUser-04   获取数据user,返回视图index
-    @RequestMapping("/add04")
-    public String add04(HttpSession session, User user){
-        session.setAttribute("myUser", user);
-        return "index";
-    }
+//    @RequestMapping("/add04")
+//    public String add04(HttpSession session, User user){
+//        session.setAttribute("myUser", user);
+//        return "index";
+//    }
 }

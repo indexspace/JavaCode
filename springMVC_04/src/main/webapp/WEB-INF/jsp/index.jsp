@@ -12,8 +12,8 @@
         <title>indexTitle</title>
     </head>
     <body>
-        === index.jsp ===
-        <br/>
-        ${sessionScope.myUser}
+        <h1>
+            你好, 这是首页
+        </h1>
     </body>
 </html>
