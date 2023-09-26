@@ -3,5 +3,27 @@
  "http://java.sun.com/dtd/web-app_2_3.dtd" >
 
 <web-app>
-  <display-name>Archetype Created Web Application</display-name>
+    <display-name>Archetype Created Web Application</display-name>
+    <servlet>
+        <servlet-name>InitParamDemo</servlet-name>
+        <servlet-class>org.czp.servlet.InitParamDemo</servlet-class>
+        <init-param>
+            <param-name>name</param-name>
+            <param-value>czp</param-value>
+        </init-param>
+        <init-param>
+            <param-name>password</param-name>
+            <param-value>123456</param-value>
+        </init-param>
+        <init-param>
+            <param-name>charset</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>InitParamDemo</servlet-name>
+        <url-pattern>/Param</url-pattern>
+    </servlet-mapping>
 </web-app>
+
+
