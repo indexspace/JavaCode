@@ -1,6 +1,8 @@
 package com.example.dataredisdemo;
 
 import com.example.dataredisdemo.pojo.User;
+import com.example.dataredisdemo.utils.IdUtils;
+import com.example.dataredisdemo.utils.RedisLock;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
@@ -29,6 +31,12 @@ class DataRedisDemoApplicationTests {
         String oJson = stringRedisTemplate.opsForValue().get("user:1");
         User oUser = mapper.readValue(oJson, User.class);
         System.out.println("oUser = " + oUser);
+    }
+
+    @Test
+    void testID() {
+        Long id = new IdUtils(stringRedisTemplate).generateId("test");
+        System.out.println("id = " + id);
     }
 
 }

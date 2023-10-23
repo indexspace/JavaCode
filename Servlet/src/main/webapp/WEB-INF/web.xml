@@ -4,25 +4,44 @@
 
 <web-app>
     <display-name>Archetype Created Web Application</display-name>
+
+    <context-param>
+        <param-name>id=1</param-name>
+        <param-value>{name=czp, class=1, sid=2021070330106}</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>txClass</param-name>
+        <param-value>1</param-value>
+    </context-param>
+    <context-param>
+        <param-name>txName</param-name>
+        <param-value>曹兆鹏</param-value>
+    </context-param>
+    <context-param>
+        <param-name>txSid</param-name>
+        <param-value>2021070330106</param-value>
+    </context-param>
+
     <servlet>
-        <servlet-name>InitParamDemo</servlet-name>
-        <servlet-class>org.czp.servlet.InitParamDemo</servlet-class>
+        <servlet-name>ConfigAndContext</servlet-name>
+        <servlet-class>org.czp.servlet.ConfigAndContext</servlet-class>
         <init-param>
-            <param-name>name</param-name>
-            <param-value>czp</param-value>
+            <param-name>fgClass</param-name>
+            <param-value>1</param-value>
         </init-param>
         <init-param>
-            <param-name>password</param-name>
-            <param-value>123456</param-value>
+            <param-name>fgName</param-name>
+            <param-value>曹兆鹏</param-value>
         </init-param>
         <init-param>
-            <param-name>charset</param-name>
-            <param-value>UTF-8</param-value>
+            <param-name>fgSid</param-name>
+            <param-value>2021070330106</param-value>
         </init-param>
     </servlet>
     <servlet-mapping>
-        <servlet-name>InitParamDemo</servlet-name>
-        <url-pattern>/Param</url-pattern>
+        <servlet-name>ConfigAndContext</servlet-name>
+        <url-pattern>/context</url-pattern>
     </servlet-mapping>
 </web-app>
 
