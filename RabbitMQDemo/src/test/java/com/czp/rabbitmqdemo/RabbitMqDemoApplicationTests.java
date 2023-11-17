@@ -1,5 +1,6 @@
 package com.czp.rabbitmqdemo;
 
+import com.czp.rabbitmqdemo.pojo.User;
 import org.junit.jupiter.api.Test;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,7 +13,6 @@ class RabbitMqDemoApplicationTests {
     RabbitTemplate rabbitTemplate;
     @Test
     void contextLoads() {
-        rabbitTemplate.convertAndSend("amq.fanout", null, "不要回答");
-        rabbitTemplate.convertAndSend("myFanout", null, "myFanout-不要回答");
+        rabbitTemplate.convertAndSend("czpExchange1110", "red", "hello world");
     }
 }

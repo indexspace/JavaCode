@@ -18,9 +18,14 @@ public class ConsumerConfig {
     public Queue queue() {
         return new Queue("myQueue");
     }
-
+//方法一
     @Bean
-    public Binding binding(Queue queue, FanoutExchange fanoutExchange) {
-        return BindingBuilder.bind(queue).to(fanoutExchange);
+    public Binding binding() {
+        return BindingBuilder.bind(queue()).to(fanoutExchange());
     }
+// 方法二
+//    @Bean
+//    public Binding binding(Queue queue, FanoutExchange fanoutExchange) {
+//        return BindingBuilder.bind(queue).to(fanoutExchange);
+//    }
 }

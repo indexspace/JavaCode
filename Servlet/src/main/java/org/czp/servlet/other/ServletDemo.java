@@ -1,4 +1,4 @@
-package org.czp.servlet;
+package org.czp.servlet.other;
 
 import javax.servlet.*;
 import javax.servlet.annotation.WebServlet;

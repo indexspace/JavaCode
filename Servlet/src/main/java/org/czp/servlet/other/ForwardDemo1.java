@@ -1,4 +1,4 @@
-package org.czp.servlet;
+package org.czp.servlet.other;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -7,8 +7,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet("/download")
-public class RefererDemo extends HttpServlet {
+@WebServlet("/from")
+public class ForwardDemo1 extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         doPost(req, resp);
@@ -18,12 +18,7 @@ public class RefererDemo extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setHeader("Content-type", "text/html; charset=UTF-8");
 
-        String referer = req.getHeader("referer");
-        if(referer.startsWith("http://localhost:8080/ServletCzp/")) {
-            resp.getWriter().write("<h1>downloading...</h1>");
-        }
-        else{
-            resp.getWriter().write("<h1>error!</h1>");
-        }
+        req.setAttribute("id", "1");
+        req.getRequestDispatcher("/to").forward(req, resp);
     }
 }

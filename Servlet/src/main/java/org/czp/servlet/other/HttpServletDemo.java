@@ -1,17 +1,18 @@
-package org.czp.servlet;
+package org.czp.servlet.other;
+
 
 import org.czp.utils.CharUtils;
 
-import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 
-@WebServlet("/to")
-public class ForwardDemo2 extends HttpServlet {
+@WebServlet("/user")
+public class HttpServletDemo extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         doPost(req, resp);
@@ -20,10 +21,10 @@ public class ForwardDemo2 extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setHeader("Content-type", "text/html; charset=UTF-8");
-        ServletContext context = getServletContext();
 
-        String id = (String) req.getAttribute("id");
-        String userInfo = context.getInitParameter("id=" + id);
-        resp.getWriter().write("<h1>id=" + id + ", userInfo=" + userInfo + "</h1>");
+        String name = CharUtils.fixCharsets(req.getParameter("name"));
+        String gender = CharUtils.fixCharsets(req.getParameter("gender"));
+
+        resp.getWriter().write("<h1>"+name+"<h1>"+"<br/>"+"<h1>"+gender+"<h1>");
     }
 }

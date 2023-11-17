@@ -1,4 +1,4 @@
-package org.czp.servlet;
+package org.czp.servlet.other;
 
 import org.czp.utils.CharUtils;
 
