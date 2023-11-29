@@ -9,8 +9,9 @@ public class Main {
 
         System.out.println("Character.digit(15, 1) = " + Character.digit(15, 1));
 
+        int a = 1;
 
-
+        1
 
     }
 
